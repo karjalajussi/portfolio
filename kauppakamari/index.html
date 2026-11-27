@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Jussi Karjala · Oulun kauppakamarin rakennusalan valiokunta</title>
+<meta name="description" content="Jussi Karjala, Redo Oy. Korjausrakentamisen ja yrittäjyyden näkökulma Oulun kauppakamarin rakennusalan valiokuntaan.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo:wght@700;800;900&family=Caveat:wght@500&display=swap">
+<style>
+/* Piirustus 02. Sama piirustusarkki kuin portfoliossa: 1px viivat, ruudukko, oranssi vain merkkeinä. */
+:root { --bg:#004B87; --ink:#F7F7F7; --conc:rgba(255,255,255,.08); --line:rgba(255,255,255,.8); --soft:rgba(255,255,255,.28); --grid1:rgba(255,255,255,.07); --grid2:rgba(255,255,255,.17); --muted:#BCD3EA; --acc:#FF5722; --on:#004B87;
+  --head:"Archivo","Arial Black",Impact,sans-serif; --body:"Space Grotesk","Helvetica Neue",Arial,sans-serif; --hand:"Caveat","Segoe Print",cursive; color-scheme:dark; }
+body[data-sheet="paper"] { --bg:#F7F7F7; --ink:#0B2F57; --conc:#E5E5E5; --line:#004B87; --soft:#B9CCE0; --grid1:rgba(0,75,135,.09); --grid2:rgba(0,75,135,.2); --muted:#4A6584; --on:#F7F7F7; color-scheme:light; }
+* { box-sizing:border-box; }
+html { overflow-x:clip; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.55; padding:0 max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px)); transition:background .4s,color .4s; }
+.sheet { max-width:1240px; margin:0 auto; border-left:1px solid var(--line); border-right:1px solid var(--line);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),linear-gradient(var(--grid1) 1px,transparent 1px),linear-gradient(90deg,var(--grid1) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px; background-position:-1px -1px; }
+h1,h2,h3 { font-family:var(--head); font-weight:900; text-transform:uppercase; margin:0; line-height:.92; letter-spacing:-.01em; }
+p { margin:0; }
+a { color:inherit; text-decoration:none; background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition:background-size .25s; }
+a:hover { background-size:100% 1px; }
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible { outline:3px solid var(--acc); outline-offset:2px; }
+.mono { font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+.mark { display:inline-block; width:10px; height:10px; background:var(--acc); margin-right:8px; }
+
+/* yläpalkki */
+.bar { display:flex; justify-content:space-between; align-items:center; gap:8px 24px; flex-wrap:wrap; padding:10px 16px; border-bottom:1px solid var(--line); }
+.bar b { color:var(--ink); font-weight:500; }
+.tgl { font:inherit; letter-spacing:inherit; text-transform:inherit; color:var(--ink); background:transparent; border:1px solid var(--line); padding:6px 10px; cursor:pointer; border-radius:0; transition:transform .12s,background .2s,color .2s; }
+.tgl:hover { background:var(--ink); color:var(--on); transform:translateY(-1px); } .tgl:active { transform:translateY(1px); }
+.tg2 { display:flex; gap:8px; align-items:center; }
+
+/* hero */
+.hero { display:grid; grid-template-columns:minmax(0,8fr) minmax(0,4fr); border-bottom:1px solid var(--line); min-height:min(86vh,760px); }
+.hero .l { padding:40px 24px 32px; border-right:1px solid var(--line); display:flex; flex-direction:column; justify-content:space-between; gap:32px; min-width:0; }
+.dim { position:relative; margin-top:14px; opacity:.85; } .dim svg { display:block; }
+.dim span { position:absolute; left:50%; top:-1px; transform:translateX(-50%); background:var(--bg); padding:0 10px; font-size:.68rem; letter-spacing:.16em; transition:background .4s; }
+.hero h1 { font-size:clamp(3.4rem,11.5vw,9.4rem); margin-top:14px; overflow-wrap:anywhere; }
+.hero h1 span { display:block; }
+.role { font-family:var(--head); font-weight:800; text-transform:uppercase; font-size:clamp(1.05rem,2.2vw,1.5rem); letter-spacing:.02em; border-top:6px solid var(--ink); padding-top:12px; align-self:flex-start; }
+.role small { display:block; font-family:var(--body); font-weight:500; font-size:.9rem; letter-spacing:.06em; margin-top:6px; color:var(--muted); }
+.lead { max-width:54ch; font-size:1.12rem; }
+.data { display:grid; grid-template-columns:1fr 1fr; align-content:start; min-width:0; }
+.data > div { padding:16px; border-bottom:1px solid var(--line); min-width:0; }
+.data > div:nth-child(odd) { border-right:1px solid var(--line); }
+.data > div.w { grid-column:span 2; border-right:0; }
+.data > div:last-child { border-bottom:0; }
+.data b { display:block; font-family:var(--head); font-weight:900; font-size:clamp(2.4rem,5vw,3.8rem); line-height:.95; font-variant-numeric:tabular-nums; }
+.data .mono { display:block; margin-bottom:6px; }
+.data .t { display:block; font-size:.88rem; }
+
+/* sisääntulo kerran latauksessa */
+[data-enter] { opacity:0; transform:translateY(14px); animation:enter .7s cubic-bezier(.2,.7,.2,1) forwards; }
+[data-enter="2"] { animation-delay:.12s; } [data-enter="3"] { animation-delay:.24s; } [data-enter="4"] { animation-delay:.36s; }
+@keyframes enter { to { opacity:1; transform:none; } }
+
+/* osiot */
+.sec { border-bottom:1px solid var(--line); }
+.sec-h { display:grid; grid-template-columns:120px minmax(0,1fr); border-bottom:1px solid var(--line); }
+.sec-h > div { padding:14px 16px; } .sec-h > div:first-child { border-right:1px solid var(--line); }
+.sec-h h2 { font-size:clamp(1.8rem,4.6vw,3.4rem); }
+.sec-h p { margin-top:10px; max-width:62ch; color:var(--muted); }
+
+/* 01 näkökulmat + matriisi */
+.comp { display:grid; grid-template-columns:minmax(0,6fr) minmax(0,6fr); }
+.ck { list-style:none; margin:0; padding:0; border-right:1px solid var(--line); }
+.ck li { border-bottom:1px solid var(--soft); padding:18px 16px; display:grid; grid-template-columns:2.4rem minmax(0,1fr); gap:12px; cursor:default; transition:background .2s; }
+.ck li:last-child { border-bottom:0; }
+.ck li:hover,.ck li.on { background:var(--conc); }
+.ck .k { font-family:var(--head); font-weight:900; font-size:1.4rem; line-height:1; color:var(--acc); }
+.ck h3 { font-size:1.25rem; line-height:1.05; margin-bottom:8px; }
+.ck p { font-size:.95rem; }
+.mx { padding:16px; display:flex; flex-direction:column; gap:14px; min-width:0; }
+.mx table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.mx th { text-align:left; font-weight:500; font-size:.64rem; letter-spacing:.08em; text-transform:uppercase; padding:10px 8px; border-bottom:1px solid var(--line); background:var(--conc); vertical-align:bottom; }
+.mx td { padding:12px 8px; border-bottom:1px solid var(--soft); }
+.mx td:first-child { font-family:var(--head); font-weight:800; text-transform:uppercase; font-size:.86rem; line-height:1.1; }
+.mx tr { transition:background .2s,color .2s; }
+.mx tr.on td { background:var(--ink); color:var(--on); }
+.mx tr.on td:first-child { box-shadow:inset 6px 0 0 var(--acc); }
+.dot { display:inline-block; width:12px; height:12px; border:1px solid currentColor; vertical-align:middle; }
+.dot.y { background:currentColor; }
+.mx .hand { font-family:var(--hand); font-size:1.35rem; line-height:1.2; color:var(--ink); }
+
+/* 02 järjestötyö */
+.org { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+.org .main { padding:24px 16px; border-right:1px solid var(--line); display:flex; flex-direction:column; gap:16px; }
+.org .main h3 { font-size:clamp(1.5rem,3vw,2.2rem); }
+.chips { display:flex; flex-wrap:wrap; gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+.chip { border-right:1px solid var(--line); border-bottom:1px solid var(--line); padding:10px 12px; min-width:0; flex:1 1 160px; transition:background .2s,color .2s; }
+.chip:hover { background:var(--ink); color:var(--on); }
+.chip:not(.held) { opacity:.5; }
+.chip.held { background:var(--conc); }
+.chip:hover { opacity:1; }
+.ck2 { font-style:normal; color:var(--acc); font-family:var(--body); font-weight:700; margin-left:8px; }
+.legend .ck2 { margin:0 6px 0 0; font-size:.9rem; }
+.chip b { display:block; font-family:var(--head); font-weight:900; font-size:1.1rem; letter-spacing:.02em; }
+.chip span { font-size:.82rem; }
+.side { display:flex; flex-direction:column; }
+.side > div { padding:20px 16px; border-bottom:1px solid var(--line); }
+.side > div:last-child { border-bottom:0; }
+.side h3 { font-size:1.2rem; line-height:1.05; margin:6px 0 8px; }
+.side p { font-size:.95rem; }
+
+/* 03 näyttö */
+.tw { overflow-x:auto; }
+.ref { width:100%; border-collapse:collapse; font-size:.92rem; }
+.ref th { text-align:left; font-weight:500; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; padding:10px 16px; border-bottom:1px solid var(--line); background:var(--conc); white-space:nowrap; }
+.ref td { padding:14px 16px; border-bottom:1px solid var(--soft); vertical-align:top; }
+.ref tr:last-child td { border-bottom:0; }
+.ref tr { transition:background .2s; } .ref tbody tr:hover td { background:var(--conc); }
+.ref td.n { font-family:var(--head); font-weight:800; text-transform:uppercase; font-size:1.02rem; line-height:1.05; min-width:12rem; }
+
+/* 04 allekirjoitus */
+.so { display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+.so .a { padding:28px 16px; border-right:1px solid var(--line); display:flex; flex-direction:column; gap:14px; justify-content:center; }
+.so .a p.big { font-family:var(--head); font-weight:900; text-transform:uppercase; font-size:clamp(1.6rem,3.6vw,2.8rem); line-height:1; }
+.so .b { display:flex; flex-direction:column; }
+.field { display:grid; grid-template-columns:7rem minmax(0,1fr); gap:8px; padding:12px 16px; border-bottom:1px solid var(--soft); align-items:baseline; }
+.sig { font-family:var(--hand); font-size:2.6rem; padding:12px 16px 0; line-height:1; }
+.tblk { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); margin-top:auto; }
+.tblk > div { padding:10px 16px; border-bottom:1px solid var(--line); }
+.tblk > div:nth-child(odd) { border-right:1px solid var(--line); }
+.tblk b { display:block; font-family:var(--head); font-weight:800; text-transform:uppercase; font-size:.95rem; }
+.foot { display:flex; justify-content:space-between; padding:10px 16px; }
+
+@media (max-width:900px) {
+  .hero,.comp,.org,.so { grid-template-columns:minmax(0,1fr); }
+  .hero { min-height:0; }
+  .hero .l,.ck,.org .main,.so .a { border-right:0; border-bottom:1px solid var(--line); }
+  .sec-h { grid-template-columns:64px minmax(0,1fr); }
+}
+@media (max-width:600px) {
+  .sec-h h2 { font-size:clamp(1.3rem,6.4vw,2rem); overflow-wrap:anywhere; hyphens:auto; }
+  .mx { padding:12px 8px; }
+  .mx table { table-layout:fixed; font-size:.78rem; }
+  .mx th { font-size:.54rem; letter-spacing:.04em; padding:8px 3px; overflow-wrap:anywhere; hyphens:auto; }
+  .mx td { padding:10px 3px; text-align:center; }
+  .mx th:first-child { width:30%; } .mx td:first-child { text-align:left; font-size:.72rem; overflow-wrap:anywhere; }
+  .ref thead { display:none; }
+  .ref, .ref tbody, .ref tr, .ref td { display:block; width:100%; }
+  .ref tr { border-bottom:1px solid var(--soft); padding:6px 0; }
+  .ref td { border-bottom:0; padding:4px 16px; }
+  .ref td.n { min-width:0; padding-top:10px; }
+  .ref td:last-child { color:var(--muted); font-size:.85rem; padding-bottom:10px; }
+}
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } [data-enter] { opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="bar mono">
+    <span>Piirustus 02 / Oulun kauppakamari</span>
+    <span>Rakennusalan valiokunta · <b>Redo Oy</b></span>
+    <span class="tg2"><a href="../fi/">Portfolio</a><button type="button" class="tgl" id="tgl" aria-pressed="false">Valkoinen piirustus</button></span>
+  </div>
+
+  <header class="hero">
+    <div class="l">
+      <div data-enter="1">
+        <span class="mono"><i class="mark"></i>Valiokuntaehdokas</span>
+        <div class="dim" aria-hidden="true"><svg viewBox="0 0 600 16" preserveAspectRatio="none" width="100%" height="16"><path d="M1 8H599M1 1V15M599 1V15" stroke="currentColor" fill="none" stroke-width="1"/><path d="M1 8l9-4v8zM599 8l-9-4v8z" fill="currentColor"/></svg><span>EHDOKAS</span></div>
+        <h1><span>Jussi</span><span>Karjala</span></h1>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px" data-enter="2">
+        <div class="role">Korjausrakentamisen ammattilainen<small>Aluepäällikkö, Redo Oy, Oulu</small></div>
+        <p class="lead">Edustan Redo Oy:tä, joka on Oulun kauppakamarin jäsen. Rakennusalan valiokuntaan tuon korjausrakentamisen, yrittäjien ja osaavan työvoiman näkökulman.</p>
+      </div>
+    </div>
+    <div class="data" aria-label="Keskeiset luvut" data-enter="3">
+      <div><span class="mono">A1 · Kokemus</span><b data-to="20">20</b><span class="t">vuotta rakennusalalla</span></div>
+      <div><span class="mono">A2 · Yrittäjyys</span><b data-to="10">10</b><span class="t">vuotta rakennusalan yrittäjänä</span></div>
+      <div><span class="mono">B1 · Työmaat</span><b data-to="16">16</b><span class="t">kansallisuutta samalla työmaalla</span></div>
+      <div><span class="mono">B2 · Järjestötyö</span><b data-to="22" data-suf="+">22+</b><span class="t">vuotta Pohjanmiesten Kerhossa</span></div>
+      <div class="w"><span class="mono">C1 · Pätevyys</span><b style="font-size:clamp(1.6rem,3vw,2.3rem)">FISE vaativa</b><span class="t">vastaava työnjohtaja · rakennusmestari (AMK)</span></div>
+    </div>
+  </header>
+
+  <section class="sec" aria-labelledby="h-1">
+    <div class="sec-h"><div class="mono">01</div><div><h2 id="h-1">Mitä tuon valiokuntaan</h2><p>Neljä näkökulmaa ja niiden kytkentä kauppakamarin painopisteisiin sekä valiokunnan teemoihin.</p></div></div>
+    <div class="comp">
+      <ol class="ck" id="ck">
+        <li data-r="a"><span class="k">A</span><div><h3>Korjausrakentaminen ja vahinkokorjaus</h3><p>Rakennuskanta ikääntyy ja korjaaminen on yhä suurempi osa alan työtä. Johdan Redon Oulun aluetta, jossa korjaamme vakuutusvahinkoja ja teemme vaativia saneerauksia joka päivä.</p></div></li>
+        <li data-r="b"><span class="k">B</span><div><h3>Yrittäjän näkökulma</h3><p>Johdin kymmenen vuotta omaa rakennusalan yritystä, enimmillään 25 työntekijää. Tiedän, miltä kaavoitus, luvat ja työvoiman saatavuus näyttävät pienen urakoitsijan arjessa.</p></div></li>
+        <li data-r="c"><span class="k">C</span><div><h3>Osaava työvoima</h3><p>Olen johtanut työmaita, joilla on ollut samaan aikaan jopa 16 kansallisuutta. Englanti on päivittäinen työkieleni. Kansainvälisen työvoiman perehdytys ja johtaminen ovat minulle tuttua arkea.</p></div></li>
+        <li data-r="d"><span class="k">D</span><div><h3>Luvat ja viranomaisyhteistyö</h3><p>Toimin vastaavana työnjohtajana vaativassa luokassa. Olen hoitanut rakennuslupavastuun useissa hankkeissa ja tehnyt yhteistyötä rakennusvalvonnan sekä Museoviraston kanssa suojelluissa kohteissa.</p></div></li>
+      </ol>
+      <div class="mx">
+        <span class="mono">Kytkentä painopisteisiin</span>
+        <table aria-label="Näkökulmien kytkentä painopisteisiin">
+          <thead><tr><th>Näkökulma</th><th>Osaava työvoima</th><th>Kaavoitus ja luvat</th><th>Investoinnit</th><th>Oulu2030</th></tr></thead>
+          <tbody>
+            <tr data-r="a"><td>A · Korjaus&shy;rakentaminen</td><td><i class="dot"></i></td><td><i class="dot y"></i></td><td><i class="dot y"></i></td><td><i class="dot y"></i></td></tr>
+            <tr data-r="b"><td>B · Yrittäjä</td><td><i class="dot y"></i></td><td><i class="dot y"></i></td><td><i class="dot y"></i></td><td><i class="dot"></i></td></tr>
+            <tr data-r="c"><td>C · Työvoima</td><td><i class="dot y"></i></td><td><i class="dot"></i></td><td><i class="dot y"></i></td><td><i class="dot"></i></td></tr>
+            <tr data-r="d"><td>D · Luvat</td><td><i class="dot"></i></td><td><i class="dot y"></i></td><td><i class="dot y"></i></td><td><i class="dot"></i></td></tr>
+          </tbody>
+        </table>
+        <p class="hand">Valmis ottamaan vastuuta valmistelusta ja kannanotoista.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-2">
+    <div class="sec-h"><div class="mono">02</div><div><h2 id="h-2">Järjestö- ja hallitustyö</h2></div></div>
+    <div class="org">
+      <div class="main">
+        <span class="mono"><i class="mark"></i>Järvenpään Seudun Nuorkauppakamari ry · 2010–2015</span>
+        <h3>Tekemällä oppiminen</h3>
+        <p>Nuorkauppakamari on alle 40-vuotiaiden kehittymis- ja johtamiskoulutusjärjestö. Hallitustehtävät vaihtuvat vuosittain ja jokainen vastuualue johdetaan oikeina projekteina. Toimin kamarin hallituksessa sihteerinä sekä viestinnän, yhteiskuntaprojektien ja kansainvälisten asioiden vastaavana.</p>
+        <p>Sama toimintatapa sopii valiokuntaan. Asia valmistellaan, viedään päätökseen ja raportoidaan.</p>
+        <p class="mono legend"><i class="ck2">✓</i> Omat roolini kamarin hallituksessa</p>
+        <div class="chips" aria-label="Hallituksen vastuualueet, omat roolit merkitty">
+          <div class="chip"><b>PRES</b><span>Puheenjohtaja</span></div>
+          <div class="chip"><b>DP</b><span>Varapuheenjohtaja</span></div>
+          <div class="chip held"><b>COM<i class="ck2" aria-label="oma rooli">✓</i></b><span>Yhteiskunta ja projektit</span></div>
+          <div class="chip"><b>IND</b><span>Koulutus ja uudet jäsenet</span></div>
+          <div class="chip"><b>BUS</b><span>Kumppanuudet</span></div>
+          <div class="chip held"><b>INT<i class="ck2" aria-label="oma rooli">✓</i></b><span>Kansainvälisyys</span></div>
+          <div class="chip held"><b>LIO<i class="ck2" aria-label="oma rooli">✓</i></b><span>Viestintä</span></div>
+          <div class="chip held"><b>SEC<i class="ck2" aria-label="oma rooli">✓</i></b><span>Sihteeri</span></div>
+          <div class="chip"><b>TREAS</b><span>Talous</span></div>
+        </div>
+      </div>
+      <div class="side">
+        <div><span class="mono">Hallituksen jäsen</span><h3>Pohjanmiesten Kerho ry</h3><p>Jäsen yli 22 vuotta. Hallitustyötä useita vuosia.</p></div>
+        <div><span class="mono">Hallituksen jäsen</span><h3>Kiinteistö&shy;osakeyhtiöt</h3><p>Hallituksen jäsen useissa kiinteistöosakeyhtiöissä.</p></div>
+        <div><span class="mono">Yrittäjä 2014–2025</span><h3>Oma rakennusalan yritys</h3><p>Tulosvastuu, tarjouslaskenta ja sopimukset. Enimmillään 25 työntekijää.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-3">
+    <div class="sec-h"><div class="mono">03</div><div><h2 id="h-3">Korjausrakentamisen näyttöä</h2></div></div>
+    <div class="tw">
+      <table class="ref">
+        <thead><tr><th>Kohde</th><th>Mitä</th><th>Rooli</th></tr></thead>
+        <tbody>
+          <tr><td class="n">Redo Oy, Oulu</td><td>Vakuutusvahinkojen korjaukset ja saneeraukset</td><td>Aluepäällikkö, 10 hengen tiimi ja tulosvastuu, 2025–</td></tr>
+          <tr><td class="n">Olympiakasarmi, Tuusula</td><td>39 asunnon peruskorjaus suojeltuun 1950-luvun kasarmiin</td><td>Projekti- ja työpäällikkö</td></tr>
+          <tr><td class="n">Viikin Loisto, Helsinki</td><td>Konkurssiin menneen rakennuttajan keskeneräisen hankkeen loppuunvienti</td><td>Työnjohtaja</td></tr>
+          <tr><td class="n">Töölön Sokeritehdas, Helsinki</td><td>Suojeltu kohde</td><td>Työnjohtaja ja urakoitsija</td></tr>
+          <tr><td class="n">Hoivakodit ja lastensuojelu&shy;yksiköt</td><td>Julkisten tilojen korjaus- ja muutostyöt</td><td>Työpäällikkö ja urakoitsija</td></tr>
+          <tr><td class="n">Yrittäjänä 2014–2025</td><td>Satoja korjauskohteita kuluttajille ja ammattilaisille</td><td>Suunnittelu, myynti, toteutus ja luovutus</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-4">
+    <div class="sec-h"><div class="mono">04</div><div><h2 id="h-4">Valiokuntatyöhön</h2></div></div>
+    <div class="so">
+      <div class="a">
+        <p class="big">Tulen valiokuntaan tekemään.</p>
+        <p>Olen syntyjään oululainen ja palasin kotikaupunkiini. Haluan, että Oulussa rakennetaan ja korjataan sujuvasti. Siihen tarvitaan tekijöitä, toimivat luvat ja alan oma ääni.</p>
+      </div>
+      <div class="b">
+        <div class="field"><span class="mono">Edustaa</span><span>Redo Oy, kauppakamarin jäsen</span></div>
+        <div class="field"><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/jussi-karjala/">linkedin.com/in/jussi-karjala</a></div>
+        <div class="field"><span class="mono">Sijainti</span><span>Oulu</span></div>
+        <div class="sig">Jussi Karjala</div>
+        <div class="tblk">
+          <div><span class="mono">Ehdokas</span><b>Jussi Karjala</b></div>
+          <div><span class="mono">Valiokunta</span><b>Rakennusala</b></div>
+          <div><span class="mono">©</span><b>Jussi Karjala 2026</b></div>
+          <div><span class="mono">Lehti</span><b>02 / 02</b></div>
+        </div>
+        <div class="foot mono"><span>Allekirjoitus</span><span>Rakennusmestari AMK</span></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script>
+(function(){
+  var b=document.body,t=document.getElementById('tgl');
+  try{ if(localStorage.getItem('sheet')==='paper'){ b.dataset.sheet='paper'; t.setAttribute('aria-pressed','true'); t.textContent='Sininen piirustus'; } }catch(e){}
+  t.addEventListener('click',function(){
+    var p=b.dataset.sheet!=='paper';
+    if(p){ b.dataset.sheet='paper'; } else { delete b.dataset.sheet; }
+    t.setAttribute('aria-pressed',String(p)); t.textContent=p?'Sininen piirustus':'Valkoinen piirustus';
+    try{ localStorage.setItem('sheet',p?'paper':'blue'); }catch(e){}
+  });
+  // Näkökulma ja matriisin rivi korostuvat yhdessä
+  var items=document.querySelectorAll('#ck li'),rows=document.querySelectorAll('.mx tbody tr');
+  function on(r){ items.forEach(function(x){x.classList.toggle('on',x.dataset.r===r)}); rows.forEach(function(x){x.classList.toggle('on',x.dataset.r===r)}); }
+  [].forEach.call(items,function(x){ x.addEventListener('mouseenter',function(){on(x.dataset.r)}); x.addEventListener('mouseleave',function(){on(null)}); });
+  [].forEach.call(rows,function(x){ x.addEventListener('mouseenter',function(){on(x.dataset.r)}); x.addEventListener('mouseleave',function(){on(null)}); });
+  // Luvut lasketaan kerran näkyviin
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('[data-to]').forEach(function(el){
+      var to=+el.dataset.to,suf=el.dataset.suf||'',s=null;
+      el.textContent='0'+suf;
+      function f(ts){ if(!s)s=ts; var k=Math.min(1,(ts-s)/1100),e=1-Math.pow(1-k,3); el.textContent=Math.round(to*e)+suf; if(k<1)requestAnimationFrame(f); }
+      setTimeout(function(){requestAnimationFrame(f)},400);
+    });
+  }
+})();
+</script>
+</body>
+</html>
